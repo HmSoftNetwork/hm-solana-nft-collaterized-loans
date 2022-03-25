@@ -1,0 +1,19 @@
+[features]
+seeds = false
+[programs.localnet]
+solana_nft_collaterized_loans = "qXdGuL6mPUatQNGHRsLZQRyZADm2QKxddhpYz24PaRn"
+
+[programs.devnet]
+solana_nft_collaterized_loans = "qXdGuL6mPUatQNGHRsLZQRyZADm2QKxddhpYz24PaRn"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/alex/blockchain/Keys/alex.json"
+#cluster = "localnet"
+#wallet = "/home/alex/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
